@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+  flex-wrap: wrap;
+}
+.workstations {
+  border: 3px dotted #a39e9e;
+  margin: 15px;
+  max-width: 250px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.workstations:hover {
+  background-color: #e9e9e9;
+}

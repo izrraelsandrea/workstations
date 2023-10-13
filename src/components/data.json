@@ -1,0 +1,14 @@
+{
+  "workstations": [
+    {
+      "id": 1,
+      "deskNumber": "A101",
+      "reservedStatus": false
+    },
+    {
+      "id": 2,
+      "deskNumber": "A102",
+      "reservedStatus": true
+    }
+  ]
+}
