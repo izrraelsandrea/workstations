@@ -1,32 +1,15 @@
-import { useState, useEffect } from "react";
 import WorkstationItem from "./WorkstationItem";
+import style from "./Workstations.module.css";
+
+const TEST_DATA = [1, 2, 3, 4, 5, 6, 7];
+
 const Workstatations = () => {
-  const [workstationData, setWorkstationData] = useState([]);
-
-  useEffect(() => {
-    //mockup API
-    fetch("https://65286cf7931d71583df23d13.mockapi.io/testapi/workstations", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((data) => {
-        return data.json();
-      })
-      .then((jsonData) => {
-        console.log(jsonData);
-        setWorkstationData(jsonData);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  }, []);
-
   return (
-    <>
-      <WorkstationItem workstationData={workstationData} />
-    </>
+    <div className={style.container}>
+      {TEST_DATA.map((id) => {
+        return <WorkstationItem id={id} key={id} />;
+      })}
+    </div>
   );
 };
 export default Workstatations;
