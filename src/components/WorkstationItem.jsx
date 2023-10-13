@@ -1,6 +1,6 @@
 import Status from "./Status";
 import styles from "./WorkstationItem.module.css";
-import Icon from "./icon";
+import Icon from "./Icon";
 import useGetWorkstation from "../hooks/useGetWorkstation";
 
 const WorkstationItem = ({ id }) => {
