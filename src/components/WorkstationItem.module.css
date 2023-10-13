@@ -1,7 +1,3 @@
-.container {
-  display: flex;
-  justify-content: center;
-}
 .parent {
   display: flex;
   justify-content: center;
@@ -11,7 +7,8 @@
 .workstations {
   border: 3px dotted #a39e9e;
   margin: 15px;
-  max-width: 250px;
+  padding: 10px;
+  max-width: 300px;
   height: 200px;
   display: flex;
   flex-direction: column;
